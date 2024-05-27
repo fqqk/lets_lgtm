@@ -9,7 +9,9 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint lint src",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind build": "tailwindcss -i ./input.css -o ./src/style/index.css",
+    "tailwind watch": "tailwindcss -i ./input.css -o ./src/style/index.css --watch"
   },
   "author": "fqqk",
   "license": "ISC",
@@ -27,6 +29,7 @@
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "prettier": "^3.2.5",
+    "tailwindcss": "^3.4.3",
     "typescript": "^5.4.5",
     "vite": "^5.2.11"
   }

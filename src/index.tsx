@@ -1,10 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+import { StrictMode } from 'react';
+// {}で包むと何が違う？
+import { createRoot } from "react-dom/client";
+import App from "./app";
 
-const App = (): React.ReactNode => <div>test</div>;
-
-ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
+const container = document.getElementById('root');
+const root = createRoot(container!);
+root.render(
+  <StrictMode>
     <App />
-  </React.StrictMode>,
+  </StrictMode>
 );
